@@ -1,8 +1,22 @@
 import React from 'react'
+import { Box, Divider, Flex } from "@chakra-ui/react"
 
 const CartWidget = () => {
   return (
-    <div>CartWidget</div>
+    <div>
+      <Flex>
+        <Box>
+        <span className="material-symbols-outlined">
+shopping_cart
+</span>
+      </Box>
+      <Divider></Divider>
+      <Box>
+      <p>10</p>
+      </Box>
+      </Flex>
+
+    </div>
   )
 }
 
