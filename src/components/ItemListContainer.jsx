@@ -2,7 +2,7 @@ import React from 'react'
 import ItemList from './ItemList';
 import {useEffect, useState} from 'react'
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
     const getProducts = async () => {
       const response = await flech ("https://fakestoreapi.com/products")
@@ -21,16 +21,11 @@ const ItemListContainer = ({greeting}) => {
 
     
       return (
-        <>
-        <div>
-          <div className='body'>
-            <h1>{greeting}</h1>
-          </div>
+        
           
           <ItemList product={product}/>
             
-        </div>
-        </>
+       
       );
     };
     
