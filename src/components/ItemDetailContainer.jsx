@@ -22,13 +22,17 @@ const ItemDetailContainer = () => {
 
 
   return (
-
-        
-        <ItemDetail product={product}/>
+      <>
+        {
+         product.map((p) =>{
+          return(
+            <ItemDetail product = {p}/>
+          )
+         }) 
           
-      
+      }
             
-       
+        </>   
       );
     };
     
