@@ -24,7 +24,7 @@ const ItemCount = () => {
     <p className='numero'>{contador}</p>
     <button disabled= {contador >= 10} onClick={() => setContador(contador + 1)} className='suma'>+</button>
     <button disabled= {contador <= 0} onClick={restar} className='resta'>-</button>
-    
+    <button onClick={onAdd} className='boton'>Comprar</button>
     
     </div>
     </>

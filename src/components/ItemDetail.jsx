@@ -18,25 +18,19 @@ const ItemDetail = ({product}) => {
     />
     <Stack mt='6' spacing='3'>
       <Heading size='md'>{product.title}</Heading>
-      <Text>
+      <Text className="text">
       {product.description}
       </Text>
-      <Text color='blue.600' fontSize='2xl'>
+      <Text color='blue.600' fontSize='2xl' className="precio">
       ${product.price}
       </Text>
     </Stack>
   </CardBody>
   <Divider />
-  <ItemCount/>
-  <CardFooter>
   
-    <ButtonGroup spacing='2' >
+  <CardFooter>
+  <ItemCount/>
     
-      <Button variant='solid' colorScheme='blue' className="boton">
-        Comprar
-      </Button>
-     
-    </ButtonGroup>
   </CardFooter>
   
 </Card>
