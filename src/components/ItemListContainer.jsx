@@ -5,7 +5,7 @@ import {useEffect, useState} from 'react'
 const ItemListContainer = () => {
 
     const getProducts = async () => {
-      const response = await flech ("https://fakestoreapi.com/products")
+      const response = await fletch ("https://fakestoreapi.com/products")
       const data = await response.json()
      
       return data
