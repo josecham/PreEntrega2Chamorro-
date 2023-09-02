@@ -131,6 +131,7 @@ button:focus-visible {
   }
   .titulo{
     color: #2bfc47;
+    margin-left: 90px;
   }
   .button{
     margin:10px;
