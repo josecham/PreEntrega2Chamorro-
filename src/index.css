@@ -44,7 +44,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #fffbfb;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -84,7 +84,7 @@ button:focus-visible {
   .contador{
       width: fit-content;
       margin: auto;
-      padding: 0.7rem;
+      padding: 0.4rem;
       text-align: center;
       border-radius: 5%;
   } 
@@ -109,10 +109,10 @@ button:focus-visible {
       
   }
   .numero{
-      background-color: honeydew;
+      background-color: black;
       padding: inherit;
       font-size: x-large;
-      
+      font-weight: 700;
   }
   .item-list{
       margin-left: 20px;
@@ -121,11 +121,13 @@ button:focus-visible {
       font-weight: 700;
       font-size: 1.2em;
       color: rgb(0, 255, 98);
+      font-weight: 700;
   }
   .item-detail{
       margin-left: 20px;
       margin-top: 20px;
       color: #2bfc47;
+      
   }
   .titulo{
     color: #2bfc47;
