@@ -38,13 +38,13 @@ const ItemDetailContainer = () => {
   return (
     <>
     <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-      {productos.map((producto) => (
+    {productos.map((producto) => (
+        <ItemDetail producto={producto}
   
-    <ItemDetail productos={productos}/>
-      ))}
-    </Grid>
-    </>
-  )
-}
-
-export default ItemDetailContainer
+        />
+        ))}
+      </Grid>
+      </>
+    )
+  }
+  export default ItemDetailContainer
