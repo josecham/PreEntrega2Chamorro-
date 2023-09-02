@@ -22,16 +22,17 @@ const ItemDetailContainer = () => {
 
 
   return (
-
-    
-    
-    
+<div className="item-list-container">
+        
+        
         <ItemDetail product={product}/>
+          
+      </div>
+
+            
        
-        )
-      }
-    
-      
+      );
+    };
     
   
     
