@@ -3,7 +3,7 @@ import ItemList from './ItemList';
 import {useEffect, useState} from 'react'
 
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
     const getProducts = async () => {
       const response = await fetch ("https://fakestoreapi.com/products")
@@ -24,9 +24,7 @@ const ItemListContainer = ({greeting}) => {
       return (
         <>
         
-        <div className='body'>
-          <h1>{greeting}</h1>
-        </div>
+        
         
         <ItemList product={product}/>
           
