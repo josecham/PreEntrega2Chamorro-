@@ -2,7 +2,7 @@ import React from 'react'
 import ItemCount from './ItemCount'
 import { Grid } from '@chakra-ui/react';
 
-const ItemDetail = (producto) => {
+const ItemDetail = ({producto}) => {
   return (
     <>
     <div className="item-detail">

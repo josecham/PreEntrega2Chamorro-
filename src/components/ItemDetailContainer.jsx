@@ -39,6 +39,7 @@ const ItemDetailContainer = () => {
     <>
     <Grid templateColumns="repeat(3, 1fr)" gap={4}>
       {productos.map((producto) => (
+  
     <ItemDetail productos={productos}/>
       ))}
     </Grid>
