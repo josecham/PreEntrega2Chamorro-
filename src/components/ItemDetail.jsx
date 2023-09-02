@@ -1,14 +1,14 @@
 import React from 'react'
 import { Card, CardBody, CardFooter, Image, Stack, Heading, Divider, ButtonGroup, Button,Text } from '@chakra-ui/react'
 import ItemCount from './ItemCount'
-import { Grid } from '@chakra-ui/react'
+
 
 
 const ItemDetail = ({product}) => {
   return (
   <>
   <div className="titulo">
-    <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+    
     <Card maxW='sm'>
   <CardBody>
     <Image
@@ -35,7 +35,7 @@ const ItemDetail = ({product}) => {
     </ButtonGroup>
   </CardFooter>
 </Card>
-</Grid>
+
 </div>
 </>
   )

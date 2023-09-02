@@ -1,7 +1,7 @@
 import React from 'react'
 import ItemDetail from './ItemDetail'
 import {useEffect, useState} from 'react'
-
+import { Grid } from '@chakra-ui/react'
 
 const ItemDetailContainer = () => {
   
@@ -23,6 +23,7 @@ const ItemDetailContainer = () => {
 
   return (
       <>
+      <Grid templateColumns="repeat(3, 1fr)" gap={4}>
         {
          product.map((p) =>{
           return(
@@ -31,7 +32,7 @@ const ItemDetailContainer = () => {
          }) 
           
       }
-            
+           </Grid> 
         </>   
       );
     };
