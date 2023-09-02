@@ -27,7 +27,7 @@ const NavBar = () => {
     <Box p='4'>
     
       <Menu>
-      <MenuButton>
+      <MenuButton className="button">
         Categories
       </MenuButton>
       <MenuList>
