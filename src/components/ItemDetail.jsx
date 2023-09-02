@@ -14,6 +14,7 @@ const ItemDetail = ({product}) => {
     <Image
        src={product.image}
        borderRadius='lg'
+       className="foto"
     />
     <Stack mt='6' spacing='3'>
       <Heading size='md'>{product.title}</Heading>

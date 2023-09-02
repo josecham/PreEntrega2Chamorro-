@@ -9,19 +9,20 @@ const Item = ({producto}) => {
    <Grid templateColumns="repeat(3, 1fr)" gap={4}>
   <Card maxW='sm'>
   <CardBody>
-    <div className="foto" >
+    
     <Image
       src={producto.image}
       borderRadius='lg'
+      className="foto"
     />
-    </div>
+    
     <Stack mt='6' spacing='3'>
       <Heading size='md'>{producto.title}</Heading>
       <Text>
-      {producto.description}
+      
       </Text>
       <Text color='blue.600' fontSize='2xl'>
-        ${producto.price}
+        
       </Text>
     </Stack>
   </CardBody>
