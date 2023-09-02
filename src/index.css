@@ -108,6 +108,7 @@ button:focus-visible {
       padding: inherit;
       font-size: x-large;
       font-weight: 700;
+      margin-bottom: 10px
   }
   .item-list{
       margin-left: 20px;
