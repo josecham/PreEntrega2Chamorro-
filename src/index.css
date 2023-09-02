@@ -138,7 +138,10 @@ button:focus-visible {
   .carrito{
     margin:30px;
   }
-
+.foto{
+  width: 200px;
+height: 200px;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
