@@ -1,13 +1,13 @@
 import React from 'react'
 import { Card, CardBody, CardFooter, Image, Stack, Heading, Divider, ButtonGroup, Button, } from '@chakra-ui/react'
-import { Grid } from '@chakra-ui/react'
+
 
 const Item = ({producto}) => {
 
   return (
     <>
-    <div className="item-list titulo">
-    <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+    <div>
+    
     <Card maxW='sm'>
       <Image src={producto.image} />
       <CardBody>
@@ -27,7 +27,7 @@ const Item = ({producto}) => {
         </ButtonGroup>
       </CardFooter>
     </Card>
-    </Grid>
+   
     </div>
     </>
   )

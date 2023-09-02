@@ -22,16 +22,17 @@ const ItemListContainer = ({greeting}) => {
 
     
       return (
-        <div className="item-list-container">
+        <>
+        
         <div className='body'>
           <h1>{greeting}</h1>
         </div>
         
         <ItemList product={product}/>
           
-      </div>
+     
 
-            
+      </>     
        
       );
     };

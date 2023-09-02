@@ -6,7 +6,7 @@ import ItemCount from './ItemCount'
 const ItemDetail = ({producto}) => {
   return (
     <>
-    <div  className="item-detail titulo">
+    <div>
       
     <Grid templateColumns="repeat(3, 1fr)" gap={4}>
       <Card maxW='sm'>
