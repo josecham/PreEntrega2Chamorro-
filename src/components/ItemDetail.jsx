@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, CardBody, CardFooter, Image, Stack, Heading, Divider, ButtonGroup, Button,Text } from '@chakra-ui/react'
+import ItemCount from './ItemCount'
 
 
 
@@ -32,6 +33,7 @@ const ItemDetail = ({producto}) => {
       <Button variant='solid' colorScheme='blue'>
         Buy now
       </Button>
+      <ItemCount/>
       <Button variant='ghost' colorScheme='blue'>
         Add to cart
       </Button>
