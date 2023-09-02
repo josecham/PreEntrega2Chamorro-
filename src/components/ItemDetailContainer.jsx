@@ -1,6 +1,5 @@
 import React from 'react'
 import ItemDetail from './ItemDetail'
-import { Grid } from '@chakra-ui/react'
 import {useEffect, useState} from 'react'
 
 
@@ -24,13 +23,13 @@ const ItemDetailContainer = () => {
 
   return (
     <>
-    <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+    
     
         <ItemDetail product={product}/>
   
        
        
-      </Grid>
+      
       </>
     )
   }
