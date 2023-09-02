@@ -27,14 +27,18 @@ const ItemDetail = ({product}) => {
     </Stack>
   </CardBody>
   <Divider />
+  <ItemCount/>
   <CardFooter>
-    <ButtonGroup spacing='2'>
-      <Button variant='solid' colorScheme='blue'>
+  
+    <ButtonGroup spacing='2' >
+    
+      <Button variant='solid' colorScheme='blue' className="boton">
         Comprar
       </Button>
-      <ItemCount/>
+     
     </ButtonGroup>
   </CardFooter>
+  
 </Card>
 </Grid>
 </div>
