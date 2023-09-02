@@ -1,13 +1,14 @@
 import React from 'react'
 import { Card, CardBody, CardFooter, Image, Stack, Heading, Divider, ButtonGroup, Button,Text } from '@chakra-ui/react'
 import ItemCount from './ItemCount'
-
+import { Grid } from '@chakra-ui/react'
 
 
 const ItemDetail = ({product}) => {
   return (
-  
-      
+  <>
+  <div className="titulo">
+    <Grid templateColumns="repeat(3, 1fr)" gap={4}>
     <Card maxW='sm'>
   <CardBody>
     <Image
@@ -17,7 +18,7 @@ const ItemDetail = ({product}) => {
     <Stack mt='6' spacing='3'>
       <Heading size='md'>{product.title}</Heading>
       <Text>
-      ffffff
+      {product.description}
       </Text>
       <Text color='blue.600' fontSize='2xl'>
       ${product.price}
@@ -28,15 +29,15 @@ const ItemDetail = ({product}) => {
   <CardFooter>
     <ButtonGroup spacing='2'>
       <Button variant='solid' colorScheme='blue'>
-        Buy now
+        Comprar
       </Button>
       <ItemCount/>
-      <Button variant='ghost' colorScheme='blue'>
-        Add to cart
-      </Button>
     </ButtonGroup>
   </CardFooter>
 </Card>
+</Grid>
+</div>
+</>
   )
 } 
  
