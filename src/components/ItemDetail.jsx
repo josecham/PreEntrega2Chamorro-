@@ -21,12 +21,12 @@ const ItemDetail = ({product}) => {
       <Text className="text">
       {product.description}
       </Text>
-      <Text color='blue.600' fontSize='2xl' className="precio">
+      <Text color='blue.600' fontSize='2xl'  
+      className="precio">
       ${product.price}
       </Text>
     </Stack>
   </CardBody>
-  <Divider />
   
   <CardFooter>
   <ItemCount/>

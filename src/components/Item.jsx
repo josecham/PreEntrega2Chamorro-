@@ -18,15 +18,9 @@ const Item = ({producto}) => {
     
     <Stack mt='6' spacing='3'>
       <Heading size='md'>{producto.title}</Heading>
-      <Text>
-      
-      </Text>
-      <Text color='blue.600' fontSize='2xl'>
-        
-      </Text>
     </Stack>
   </CardBody>
-  <Divider />
+ 
   <CardFooter>
     <ButtonGroup spacing='2' >
       <Button variant='solid' colorScheme='blue' className="boton">
