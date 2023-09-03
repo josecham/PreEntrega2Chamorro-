@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, CardFooter, Image, Stack, Heading, Divider, ButtonGroup, Button,Text } from '@chakra-ui/react'
+import { Card, CardBody, CardFooter, Image, Stack, Heading, ButtonGroup, Button,Text } from '@chakra-ui/react'
 import { Grid } from '@chakra-ui/react'
 
 const Item = ({producto}) => {
