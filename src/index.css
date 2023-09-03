@@ -109,6 +109,7 @@ button:focus-visible {
       font-weight: 700;
       margin-bottom: 10px;
       text-align: center;
+      margin-left: 50px;
   }
   .item-list{
       margin-left: 20px;
