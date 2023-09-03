@@ -1,11 +1,11 @@
 import React from 'react'
 import Item from './Item'
-import { Grid } from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 
 const ItemList = ({product}) => {
   return (
     <>
-     <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+    <SimpleGrid columns={[2, null, 3]} spacing='40px'>
      
     {product.map((p) => {
       return(
@@ -14,7 +14,7 @@ const ItemList = ({product}) => {
     })
   }
   
-  </Grid>
+  </SimpleGrid>  
       </>
   )
 }
