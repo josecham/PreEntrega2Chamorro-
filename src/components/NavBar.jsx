@@ -9,6 +9,7 @@ import {
     Box,
     Spacer,
   } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
@@ -17,9 +18,9 @@ const NavBar = () => {
         <Flex>
     
     <Box p='4'>
-    
+    <Link to = {"/"}>
     <h3>Dc - Comics</h3>
-    
+    </Link>
     </Box>
     
     <Spacer />
@@ -39,7 +40,9 @@ const NavBar = () => {
     </Box>
     <Spacer />
     <Box p='4'>
+<Link to = {"/cart"}>
     <CartWidget/>
+    </Link>
     </Box>
     </Flex>
          
