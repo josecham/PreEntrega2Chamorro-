@@ -2,6 +2,7 @@ import React from 'react'
 import ItemDetail from './ItemDetail'
 import {useEffect, useState} from 'react'
 import { SimpleGrid } from '@chakra-ui/react'
+import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
   
@@ -19,13 +20,13 @@ const ItemDetailContainer = () => {
 
   },[]
   )
-
-
+  const { id } = useParams()
+  const filteredProducts = product.filter((producto) => producto.id == id)
   return (
       <>
       <SimpleGrid columns={[2, null, 3]} spacing='40px'>
         {
-         product.map((p) =>{
+         filteredProducts.map((p) =>{
           return(
             <ItemDetail key={p.id} product = {p}/>
           )

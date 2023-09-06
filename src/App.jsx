@@ -14,6 +14,7 @@ const App = () => {
     <NavBar/>
 
     <Routes>
+    <Route exact path = '/' element = {<ItemListContainer/>}/>
     {/*<ItemListContainer greeting = {"Bienvenidos a la galeria de Comics"} />
     <ItemDetailContainer/>
     
@@ -22,7 +23,7 @@ const App = () => {
     <Route exact path = '/cart' element = {<Cart/>}/>
     <Route exact path = '/product/:id' element = {<ProductDetail/>}/>*/}
     <Route exact path = '/item/:id' element = {<ItemDetailContainer/>}/>
-
+    
     </Routes>
     </BrowserRouter>
   )

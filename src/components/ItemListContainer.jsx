@@ -2,6 +2,7 @@ import React from 'react';
 import ItemList from './ItemList';
 import { useEffect, useState } from 'react';
 
+
 const ItemListContainer = ({ greeting }) => {
 
   const getProducts = async () => {
@@ -17,14 +18,18 @@ const ItemListContainer = ({ greeting }) => {
     getProducts().then((product) => setProduct(product));
   }, []);
 
+  //const filteredProducts = product.filter((producto) => producto.category === category)
   return (
     <>
     
     <div className='body'>
     <h1>{ greeting }</h1>
     </div>
-    <ItemList product={product} />
     
+          return(
+    <ItemList product={product} />
+    )
+  
     </>
   );
 };

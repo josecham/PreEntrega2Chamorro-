@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardBody, CardFooter, Image, Stack, Heading, ButtonGroup, Button,Text } from '@chakra-ui/react'
-
+import { Link } from 'react-router-dom'
 
 
 const Item = ({producto}) => {
@@ -24,11 +24,15 @@ const Item = ({producto}) => {
   </CardBody>
  
   <CardFooter>
+  
     <ButtonGroup spacing='2' >
+    <Link to = {`/item/${producto.id}`}>
       <Button variant='solid' colorScheme='blue' className="botones">
         Detalle
       </Button>
+      </Link>
     </ButtonGroup>
+    
   </CardFooter>
 </Card>
 
