@@ -9,21 +9,22 @@ import Cart from './components/Cart'
 import ProductDetail from './components/ProductDetail'
 
 const App = () => {
+  
+
+
   return (
     <BrowserRouter>
-    <NavBar/>
+    <NavBar />
 
     <Routes>
-    <Route exact path = '/' element = {<ItemListContainer/>}/>
-    {/*<ItemListContainer greeting = {"Bienvenidos a la galeria de Comics"} />
-    <ItemDetailContainer/>
-    
+    <Route exact path = '/' element = {<ItemListContainer greeting = {"Bienvenidos a la galeria de Comics"}/>}/>
+    <Route exact path = '/cart' element = {<Cart/>}/>
+    {/*
     <Route exact path = '/' element = {<Home/>}/>
     <Route exact path = '/about' element = {<About/>}/>
-    <Route exact path = '/cart' element = {<Cart/>}/>
     <Route exact path = '/product/:id' element = {<ProductDetail/>}/>*/}
     <Route exact path = '/item/:id' element = {<ItemDetailContainer/>}/>
-    
+    <Route exact path = '/category/:category' element = {<ItemListContainer/>}/>
     </Routes>
     </BrowserRouter>
   )
