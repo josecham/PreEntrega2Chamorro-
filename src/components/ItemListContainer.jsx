@@ -5,7 +5,9 @@ import { useParams } from 'react-router-dom';
 
 
 const ItemListContainer = ({ greeting }) => {
+
   const {category} = useParams ()
+  
   const getProducts = async () => {
     const response = await fetch("https://fakestoreapi.com/products");
     const data = await response.json();
