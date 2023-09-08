@@ -10,6 +10,7 @@ const ItemDetail = ({ product }) => {
 
   return (
     <>
+    
     <div className="titulo">
    
       <Card maxW='sm'>

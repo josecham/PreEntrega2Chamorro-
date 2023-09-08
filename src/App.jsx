@@ -19,7 +19,7 @@ const App = () => {
     <Routes>
     <Route exact path = '/' element = {<ItemListContainer greeting = {"Bienvenidos a la galeria de Comics"}/>}/>
     <Route exact path = '/cart' element = {<Cart/>}/>
-    {/*
+    {/*<input type= "text" onKeyDown={sinVolcales} placeholder= "sinVocales"/>
     <Route exact path = '/' element = {<Home/>}/>
     <Route exact path = '/about' element = {<About/>}/>
     <Route exact path = '/product/:id' element = {<ProductDetail/>}/>*/}

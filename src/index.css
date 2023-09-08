@@ -78,7 +78,7 @@ button:focus-visible {
   } 
   .body h1{
       color:#3bf615;
-      padding: 10px;
+      padding: 40px;
   
 
   } 
@@ -130,7 +130,7 @@ button:focus-visible {
   .titulo{
     color: #2bfc47;
     text-align: center;
-    
+    padding: 5px;
   }
   .button{
     margin:10px;
