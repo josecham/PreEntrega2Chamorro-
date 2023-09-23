@@ -1,8 +1,18 @@
-# React + Vite
+# _MI PROYECTO DE REACT_
+## COMISION DE CODERHOUSE
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto ficticio de sitio e-commerce creado para el curso de ReactJS de CoderHouse, proyecto llamado Comic-Dc.
+En este proyecto para el curso de ReactJS creamos varios componentes con el objetivo de construir un sitio e-commerce funcional. Los componentes centrales para el desarrollo de la funcionalidad son: ItemListContainer, ItemList, Item, ItemDetailContainer, ItemDetail, CartView, CartWidget, CartContext, NavBar, ItemCount.
+---
+---
+## CONTACTO
+---
 
-Currently, two official plugins are available:
+## Jose Chamorro 
+- [LinkedIn](https://www.linkedin.com/in/jose-chamorro01/)
+https://www.linkedin.com/in/jose-chamorro01/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+

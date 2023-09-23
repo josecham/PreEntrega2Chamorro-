@@ -3,30 +3,33 @@ import NavBar from './components/NavBar'
 import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import { BrowserRouter,Route, Routes } from 'react-router-dom'
-import Home from './components/Home'
-import About from './components/About'
 import Cart from './components/Cart'
-import ProductDetail from './components/ProductDetail'
+import CartProvider from './context/CartProvider'
+
+
 
 const App = () => {
   
 
 
   return (
+    
+    <>
     <BrowserRouter>
+    <CartProvider>
     <NavBar />
-
     <Routes>
     <Route exact path = '/' element = {<ItemListContainer greeting = {"Bienvenidos a la galeria de Comics"}/>}/>
     <Route exact path = '/cart' element = {<Cart/>}/>
-    {/*<input type= "text" onKeyDown={sinVolcales} placeholder= "sinVocales"/>
-    <Route exact path = '/' element = {<Home/>}/>
-    <Route exact path = '/about' element = {<About/>}/>
-    <Route exact path = '/product/:id' element = {<ProductDetail/>}/>*/}
     <Route exact path = '/item/:id' element = {<ItemDetailContainer/>}/>
-    <Route exact path = '/category/:category' element = {<ItemListContainer/>}/>
+    <Route exact path = '/categoria/:categoria' element = {<ItemListContainer/>}/>
     </Routes>
+    </CartProvider>
     </BrowserRouter>
+    </>
+
+    
+  
   )
 }
 

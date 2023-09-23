@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 const Item = ({producto}) => {
+  
   return (
   <>
   
@@ -14,13 +15,13 @@ const Item = ({producto}) => {
   <CardBody>
     
     <Image
-      src={producto.image}
+      src={producto.imagen}
       borderRadius='lg'
       className="foto"
     />
     
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>{producto.title}</Heading>
+      <Heading size='md'>{producto.nombre}</Heading>
     </Stack>
   </CardBody>
  

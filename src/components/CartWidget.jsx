@@ -2,7 +2,10 @@ import React from 'react'
 import { Box, Divider, Flex } from "@chakra-ui/react"
 
 const CartWidget = () => {
+  
+  //contador
   return (
+    <>
     <div>
       <Flex>
         <Box>
@@ -12,11 +15,14 @@ shopping_cart
       </Box>
       <Divider></Divider>
       <Box>
-      <p>10</p>
+        
+      <p>2</p>
+      
       </Box>
       </Flex>
 
     </div>
+    </>
   )
 }
 

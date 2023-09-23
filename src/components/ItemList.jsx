@@ -3,6 +3,7 @@ import Item from './Item'
 import { SimpleGrid } from '@chakra-ui/react'
 
 const ItemList = ({product}) => {
+  console.log(product)
   return (
     <>
     <SimpleGrid columns={[2, null, 3]} spacing='40px'>
@@ -19,4 +20,4 @@ const ItemList = ({product}) => {
   )
 }
 
-export default ItemList
+export default React.memo(ItemList)

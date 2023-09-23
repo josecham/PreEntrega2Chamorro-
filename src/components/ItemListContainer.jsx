@@ -3,10 +3,30 @@ import ItemList from './ItemList';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
+import { collection, getDocs, getFirestore} from 'firebase/firestore'
 
 const ItemListContainer = ({ greeting }) => {
 
-  const {category} = useParams ()
+  const {categoria} = useParams ()
+  
+  const [product, setProducts] = useState([])
+  console.log(product)
+//`{${categoria}`
+  useEffect(() =>{
+    const db = getFirestore()
+    const itemsCollection = collection (db,`dc_comics`)
+    getDocs (itemsCollection).then((snapshot) => {
+      const docs = snapshot.docs.map((doc) => 
+      ({ ...doc.data(), id:doc.id
+      }))
+      setProducts(docs)
+    })
+  }, [])
+  /*
+   const [productos, setProductos] = useState ([])
+   productos ==[]
+   productos.Length === 0 ? <Loading/> : <ItemList/>
+  
   
   const getProducts = async () => {
     const response = await fetch("https://fakestoreapi.com/products");
@@ -20,8 +40,12 @@ const ItemListContainer = ({ greeting }) => {
   useEffect(() => {
     getProducts().then((product) => setProduct(product));
   }, []);
+*/
 
-  const filteredProducts = product.filter((producto) => producto.category === category)
+
+
+  
+  const filteredProducts = product.filter((producto) => producto.categoria === categoria)
   return (
     <>
     
@@ -30,10 +54,10 @@ const ItemListContainer = ({ greeting }) => {
     </div>
     {
 
-     category ? <ItemList  product={filteredProducts}  />: <ItemList  product={product}/>
+     categoria ? <ItemList  product={filteredProducts}  />: <ItemList  product={product}/>
 }
     </>
-  );
+  );     
 };
 
 export default ItemListContainer;

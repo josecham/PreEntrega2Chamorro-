@@ -3,37 +3,36 @@ import ItemDetail from './ItemDetail'
 import {useEffect, useState} from 'react'
 import { SimpleGrid } from '@chakra-ui/react'
 import { useParams } from 'react-router-dom'
+import { doc, getDoc, getFirestore,getDocs, collection } from 'firebase/firestore'
 
 const ItemDetailContainer = () => {
-  
-  const getProducts = async () => {
-    const response = await fetch ("https://fakestoreapi.com/products")
-    const data = await response.json()
-   
-    return data
-  }
-  const [product, setProduct] = useState ([])
-  
-
-  useEffect(() => {
-    getProducts().then((product) => setProduct(product))
-
-  },[]
-  )
   const { id } = useParams()
-  const filteredProducts = product.filter((producto) => producto.id == id)
-  return (
-      <>
-      <SimpleGrid columns={[2, null, 3]} spacing='40px'>
-        {
-         filteredProducts.map((p) =>{
-          return(
-            <ItemDetail key={p.id} product = {p}/>
-          )
-         }) 
-          
+  const [product, setProduct] = useState([])
+  
+  useEffect(() => {
+    const db= getFirestore()
+    const oneItem = doc(db, `dc_comics`, `${id}`)
+    getDoc(oneItem).then((snapshot) =>{
+      if(snapshot.exists()) {
+        const docs = snapshot.data();
+        setProduct({id: snapshot.id, ...docs})
       }
-         </SimpleGrid>  
+    })
+    }, [])
+
+    return (
+      <>
+        
+        
+        <SimpleGrid columns={[2, null, 3]} spacing='40px'>
+          
+        
+          <ItemDetail product={product} />
+        
+            
+           
+            </SimpleGrid> 
+          
         </>   
       );
     };
@@ -41,3 +40,5 @@ const ItemDetailContainer = () => {
   
     
   export default ItemDetailContainer
+
+  

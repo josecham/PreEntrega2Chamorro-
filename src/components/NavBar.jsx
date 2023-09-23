@@ -34,19 +34,19 @@ const NavBar = () => {
         Categories
       </MenuButton>
       <MenuList >
-        <MenuItem >
-        <Link to = {`/category/${"men's clothing"}`}> 
-        men's clothing
+      <MenuItem >
+        <Link to = {`/categoria/${"Batman"}`}>
+        Batman
         </Link>
         </MenuItem>
         <MenuItem >
-        <Link to = {`/category/${"jewelery"}`}>
-        jewelery
+        <Link to = {`/categoria/${"The Flash"}`}>
+        The Flash
         </Link>
         </MenuItem>
         <MenuItem >
-        <Link to = {`/category/${"electronics"}`}>
-        electronics
+        <Link to = {`/categoria/${"Justice League"}`}>
+        Justice League
         </Link>
         </MenuItem>
        
