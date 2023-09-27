@@ -1,9 +1,11 @@
 import React from 'react'
 import { Box, Divider, Flex } from "@chakra-ui/react"
+import { CartContext } from '../context/CartProvider'
+import { useContext } from 'react'
 
 const CartWidget = () => {
+  const {totalContador} = useContext(CartContext)
   
-  //contador
   return (
     <>
     <div>
@@ -16,7 +18,7 @@ shopping_cart
       <Divider></Divider>
       <Box>
         
-      <p>2</p>
+      <p className='totalcontador'>{totalContador}</p>
       
       </Box>
       </Flex>

@@ -1,5 +1,4 @@
-import React from 'react'
-import CartWidget from './CartWidget'
+import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom'
 
 import {
@@ -34,9 +33,9 @@ const NavBar = () => {
         Categories
       </MenuButton>
       <MenuList >
-      <MenuItem >
-        <Link to = {`/categoria/${"Batman"}`}>
-        Batman
+        <MenuItem >
+        <Link to = {`/categoria/${"Batman"}`}> 
+       Batman
         </Link>
         </MenuItem>
         <MenuItem >
@@ -62,9 +61,9 @@ const NavBar = () => {
     </Box>
     </Flex>
          
-          
+    
     </div>
-        
+    
         </>
       )
     }

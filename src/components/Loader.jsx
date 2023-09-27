@@ -1,17 +1,12 @@
+
 import React from "react";
-import { Spinner, Stack } from '@chakra-ui/react'
+import { CircularProgress } from '@chakra-ui/react'
 
-
-export const Loader = () => {
+const Loader = () => {
   return (
-    <Stack direction='row' spacing={4}>
-  <Spinner size='xs' />
-  <Spinner size='sm' />
-  <Spinner size='md' />
-  <Spinner size='lg' />
-  <Spinner size='xl' />
-</Stack>
+
+    <CircularProgress value={30} size='120px' className="margin"/>
   );
 };
 
-export default Loader
+export default Loader;

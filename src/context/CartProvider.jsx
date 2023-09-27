@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { createContext, useState, useEffect} from 'react';
 
@@ -7,57 +6,58 @@ export const CartContext = createContext ()
 export const CartProvider = ({children}) => {
 
 const [cart, setCart] = useState ([])
+
 const comision = "agregado al carrito"
-console.log(cart)
+
+const [carrito, setCarrito] = useState ([])
+const [cantidad, setCantidad] = useState(0);
+const [contador, setContador] = useState(0);
 
 
-const [totalPrice, setTotalPrice] = useState(0);
+const removeItem = (productId) => {
+  const updatedCarrito = carrito.filter((producto) => producto.id !== productId);
+  setCarrito(updatedCarrito);
+};
 
-    useEffect(() => {
-        // Calcular el precio total cada vez que el carrito cambie
-        const newTotalPrice = cart.reduce(
-          (total, product) => total + product.price * product.quantity,
-          0
-        );
-        setTotalPrice(newTotalPrice);
-      }, [cart]);
 
-    const addItem = (item, quantity) => {
-        if (!isInCart(item.id)){
-            setCart(prev => [...prev, {...item, quantity}])
-        } else {
-            console.error("already in cart")
-        }
-    }
-    const removeItem = (itemId) => {
-        const cartUpdated = cart.filter(prod => prod.id !== itemId)
-        setCart(cartUpdated)
-    }
+const addItem = (item, quantity) => {
+  if (!isInCart(item.id)){
+      setCart(prev => [...prev, {...item, quantity}])
+  } else {
+      console.error("already in cart")
+  }
+}
 
-    const clearCart = () => {
-        setCart([])
-    }
+
+
+const isInCart = (itemId) => {
+  return cart.some(prod => prod.id === itemId)
+}
+
+const totalContador = carrito.reduce((acc, el) => acc + 1, 0);
+/*
+const restar = () => {
+  if (contador > 0) {
+    setContador(contador - 1);
+  }
+};
+
+const onAdd = () => {
+  if (contador > 0) {
     
-    const isInCart = (itemId) => {
-        return cart.some(prod => prod.id === itemId)
-    }
-
-    const totalQuantity = cart.reduce((total, product) => total + product.quantity, 0);
-
-
-
-//agregar elementos al carrito
-//eliminar
-
-//incremento
-//decremento
-//onAdd
-// Función para agregar un producto al carrito
-
+    setContador(contador);
+    
+  } else {
+    alert('Debes seleccionar al menos una unidad para agregar al carrito');
+  }
+  
+};
+*/
 
   return (
     
-    <CartContext.Provider value={{ cart, setCart, comision,addItem, removeItem, clearCart, totalQuantity, totalPrice }}>
+
+  <CartContext.Provider value={{ cart, setCart, comision, carrito, setCarrito, removeItem, totalContador, cantidad, setCantidad, contador, setContador, addItem }}>
     {children}
     </CartContext.Provider>
     
@@ -65,4 +65,4 @@ const [totalPrice, setTotalPrice] = useState(0);
 }
 
 export default CartProvider
-  
+ 

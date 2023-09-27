@@ -85,8 +85,8 @@ button:focus-visible {
   
   .suma{
       background-color:#cbe9cb;
-      margin-bottom: 5px;
-      
+      margin-bottom: 20px;
+      margin-left: 400px;
   }
   .resta{
       background-color: rgb(231, 183, 183);
@@ -99,7 +99,8 @@ button:focus-visible {
   }
   .restart{
       background-color:blanchedalmond;
-      padding: inherit;
+      margin-left: 10px;
+      margin-right: 10px;
       
   }
   .numero{
@@ -107,9 +108,9 @@ button:focus-visible {
       padding: inherit;
       font-size: x-large;
       font-weight: 700;
-      margin-bottom: 10px;
       text-align: center;
-      margin-left: 50px;
+      margin-left: 400px;
+      width: 300px;
   }
   .item-list{
       margin-left: 20px;
@@ -148,7 +149,7 @@ button:focus-visible {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #5ef08f;
+  background-color:  #5ef08f;
   cursor: pointer;
   transition: border-color 0.25s;
   
@@ -164,8 +165,54 @@ button:focus-visible {
   transition: border-color 0.25s;
   margin-left: 150px;
 }
+.cardContent{
+  display: inline-grid;
 
+  margin: 30px;
 
+  width: 100px;
+}
+.cartContent{
+  height: 120px;
+  width: 100px;
+  text-align: center;
+}
+.cartTotal{
+  text-align: center;
+  
+}
+.vacio{
+  color: rgb(248, 101, 101);
+  text-align: center;
+}
+.margin{
+  margin-left: 600px;
+  margin-bottom: 400px;
+  margin-top: 100px;
+}
+.totalcontador{
+  margin-right: 10px;
+  margin-top: 40px;
+  color: #2bfc47;
+}
+.input{
+    height: 50px;
+    font-size:20px;
+    background-color:lightgrey;
+    
+}
+.description{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5ef08f;
+  text-align: justify;
+}
+.añadir{
+  color:  #5ef08f;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  font-size:30px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
