@@ -204,11 +204,11 @@ button:focus-visible {
 .description{
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #5ef08f;
+  color: #4ff185;
   text-align: justify;
 }
 .añadir{
-  color:  #5ef08f;
+  color:  #5df18e;
   cursor: pointer;
   transition: border-color 0.25s;
   font-size:30px;

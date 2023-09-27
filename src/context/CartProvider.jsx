@@ -35,24 +35,7 @@ const isInCart = (itemId) => {
 }
 
 const totalContador = carrito.reduce((acc, el) => acc + 1, 0);
-/*
-const restar = () => {
-  if (contador > 0) {
-    setContador(contador - 1);
-  }
-};
 
-const onAdd = () => {
-  if (contador > 0) {
-    
-    setContador(contador);
-    
-  } else {
-    alert('Debes seleccionar al menos una unidad para agregar al carrito');
-  }
-  
-};
-*/
 
   return (
     
