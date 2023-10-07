@@ -17,11 +17,12 @@ ItemCount = Componente para agregar o quitar n productos al carrito desde la sec
 Loader = Componente con estilos que muestra el clásico circularprogress cuando está cargando el contenido.
 Form = Componente para generar el paso final del proceso de compras, donde el cliente ingresa sus datos y realiza el pago.
 ---
----
 ## GIF
 (https://www.canva.com/design/DAFt3JLcHSg/lIdMhcJ9y7C37BEPuLse5A/watch?utm_content=DAFt3JLcHSg&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 ---
-
+## APLICACION DESPLEGADA EN VERCEL
+(https://proyecto-final-chamorro.vercel.app/)
+---
 ## Jose Chamorro 
 - [LinkedIn](https://www.linkedin.com/in/jose-chamorro01/)
 https://www.linkedin.com/in/jose-chamorro01/
