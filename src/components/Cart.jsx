@@ -27,7 +27,7 @@ const Cart = () => {
           <h3 className="item-detail">{producto.nombre} </h3>
           <h3 className="item-detail">Precio: {producto.precio * producto.cantidad}$ </h3>
           <h3 className="item-detail">Cantidad: {producto.cantidad }</h3>
-          
+
           <button className="restart" variant="" onClick={() => removeItem(producto.id)}>eliminar</button>
         </div>
       ))}

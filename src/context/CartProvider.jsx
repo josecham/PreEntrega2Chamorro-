@@ -37,6 +37,8 @@ const isInCart = (itemId) => {
 const totalContador = carrito.reduce((acc, el) => acc + 1, 0);
 
 
+
+
   return (
     
 

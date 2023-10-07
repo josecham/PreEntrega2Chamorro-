@@ -224,4 +224,75 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  .padi{
+    padding: 100px;
+  }
+}
+@media (max-width: 768px) {
+  header, main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    display: block;
+    padding: 0;
+  }
+  a {
+    
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    display: block;
+    flex-direction: column;
+  }
+  .description {
+    display: block;
+    padding: 0;
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: "Courier New", Courier, monospace;
+    color: #2bfc47;
+  }
+  li {
+    padding: 11px;
+  }
+  .carrito{
+    margin: -9px;
+    padding-top: 90px;
+  }
+  .totalcontador {
+    margin-right: 10px;
+    margin-top: 105px;
+    color: #2bfc47;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  .img-fluid {
+    width: 100%;
+    border-radius: 20px;
+  } /* para evitar el overflow */
+  img {
+    border-radius: 20px;
+  }
+  .foto {
+    width: 80px;
+  }
+  .botones{
+    margin-left: 1px;
+  }
+  .titulo {
+    color: #2bfc47;
+    text-align: initial;
+  }
+  .padi {
+    padding: 1px;
+  }
 }

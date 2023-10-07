@@ -17,7 +17,7 @@ const ItemDetail = ({ product }) => {
 }
   return (
     <>
-    <SimpleGrid p='100px' spacing={1} minChildWidth="1100px">
+    <SimpleGrid  spacing={1} minChildWidth="1100px" className='padi'>
     <div className="titulo">
    
       <Card maxW='sm'>
