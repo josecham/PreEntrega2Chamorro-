@@ -20,7 +20,7 @@ Form = Componente para generar el paso final del proceso de compras, donde el cl
 ## GIF
 (https://www.canva.com/design/DAFt3JLcHSg/lIdMhcJ9y7C37BEPuLse5A/watch?utm_content=DAFt3JLcHSg&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 ---
-## APLICACION DESPLEGADA EN VERCEL
+## APLICACION DESPLEGADA EN VERCEL vista responsive
 (https://proyecto-final-chamorro.vercel.app/)
 ---
 ## Jose Chamorro 
