@@ -6,7 +6,7 @@ const ItemList = ({product}) => {
   
   return (
     <>
-    <SimpleGrid columns={[2, null, 3]} spacing='40px' className='grid'>
+    <SimpleGrid columns={[2, null, 3]} spacing='40px' >
      
     {product.map((p) => {
       return(

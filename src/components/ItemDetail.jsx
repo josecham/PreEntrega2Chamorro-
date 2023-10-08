@@ -19,7 +19,7 @@ const ItemDetail = ({ product }) => {
   return (
     <>
     
-    <SimpleGrid  spacing={1} minChildWidth="1100px" >
+    <SimpleGrid  spacing={1} minChildWidth="1250px">
     <div className="titulo">
    
       <Card maxW='sm'>
