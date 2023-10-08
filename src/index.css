@@ -280,6 +280,8 @@ button:focus-visible {
     margin-right: 10px;
     margin-top: 105px;
     color: #2bfc47;
+    height: 10px;
+    width: 10px;
   }
   
   h3 {
@@ -291,24 +293,20 @@ button:focus-visible {
   .img-fluid {
     width: 100%;
     border-radius: 20px;
-  } /* para evitar el overflow */
+  } 
   img {
     border-radius: 20px;
   }
   .foto {
-    width: 250px;
+    width: 80px;
   }
-  .botones{
-    margin-left: 70px;
-  }
+  
   .titulo {
     color: #2bfc47;
     text-align: initial;
-    padding: 20px;
+    padding: 0px;
   }
-  .padi {
-    padding: 1px;
-  }
+  
   .input {
     height: 50px;
     font-size: 25px;
@@ -319,9 +317,9 @@ button:focus-visible {
     color: #3bf615;
     padding: 0px;
   }
-  .grid{
-    margin-left: 30px;
-    width: 1000px;
+  .botones{
+    margin-left: 1px;
+    padding: 0.6em 1em;
   }
   .cardContent {
     display: inline-grid;
