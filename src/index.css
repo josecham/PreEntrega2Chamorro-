@@ -235,6 +235,11 @@ button:focus-visible {
     align-items: center;
     font-family: inherit;
   }
+  .header{
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+  }
   ul {
     display: block;
     padding: 0;
@@ -304,7 +309,7 @@ button:focus-visible {
   .titulo {
     color: #2bfc47;
     text-align: initial;
-    padding: 0px;
+    padding: 5px;
   }
   
   .input {
@@ -315,7 +320,7 @@ button:focus-visible {
   }
   .body h1 {
     color: #3bf615;
-    padding: 0px;
+    padding: 1px;
   }
   .botones{
     margin-left: 1px;
