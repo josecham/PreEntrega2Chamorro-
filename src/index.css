@@ -47,7 +47,7 @@ button {
   background-color: #fffbfb;
   cursor: pointer;
   transition: border-color 0.25s;
-  margin-left: 20px
+  margin-left: 10px;
 }
 button:hover {
   border-color: #646cff;
@@ -86,7 +86,7 @@ button:focus-visible {
   .suma{
       background-color:#cbe9cb;
       margin-bottom: 20px;
-      margin-left: 400px;
+      margin-left: 420px;
   }
   .resta{
       background-color: rgb(231, 183, 183);
@@ -109,8 +109,8 @@ button:focus-visible {
       font-size: x-large;
       font-weight: 700;
       text-align: center;
-      margin-left: 400px;
-      width: 300px;
+      margin-left: 420px;
+      width: 250px;
   }
   .item-list{
       margin-left: 20px;
@@ -258,10 +258,10 @@ button:focus-visible {
     margin-right: 780px;
   }
   .numero{
-    margin-left: 10px;
+    margin-left: 32px;
   }
   .suma{
-    margin-left: 10px;
+    margin-left: 50px;
   }
   .links{
     margin-right: 780px;
@@ -296,17 +296,36 @@ button:focus-visible {
     border-radius: 20px;
   }
   .foto {
-    width: 80px;
+    width: 250px;
   }
   .botones{
-    margin-left: 1px;
+    margin-left: 70px;
   }
   .titulo {
     color: #2bfc47;
     text-align: initial;
+    padding: 20px;
   }
   .padi {
     padding: 1px;
   }
-
+  .input {
+    height: 50px;
+    font-size: 25px;
+    background-color: lightgrey;
+    margin-bottom: 10px;
+  }
+  .body h1 {
+    color: #3bf615;
+    padding: 0px;
+  }
+  .grid{
+    margin-left: 30px;
+    width: 1000px;
+  }
+  .cardContent {
+    display: inline-grid;
+    margin: 25px;
+    width: 100px;
+  }
 }
