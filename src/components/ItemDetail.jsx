@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { CartContext } from '../context/CartProvider'
 import { SimpleGrid } from '@chakra-ui/react'
 
+
 const ItemDetail = ({ product }) => {
   console.log('producto en ItemDetail:', product);
   const {carrito, setCarrito, contador} = useContext (CartContext)
@@ -17,6 +18,7 @@ const ItemDetail = ({ product }) => {
 }
   return (
     <>
+    
     <SimpleGrid  spacing={1} minChildWidth="1100px" className='padi'>
     <div className="titulo">
    
@@ -44,12 +46,13 @@ const ItemDetail = ({ product }) => {
       
     </CardFooter>
     <>
-    <Button as={Link} onClick={() => buyProducts(product)} to="/" className='añadir'>Añadir al carrito</Button>
+    <Button as={Link} onClick={() => buyProducts(product)} to="/" className='añadir links'>Añadir al carrito</Button>
     </>
   </Card>
   
   </div>
   </SimpleGrid>
+  
   </>
     )
   } 

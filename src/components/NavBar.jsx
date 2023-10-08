@@ -29,7 +29,7 @@ const NavBar = () => {
     
 
       <Menu>
-      <MenuButton className="button" >
+      <MenuButton className="button boton" >
         Categories
       </MenuButton>
       <MenuList >

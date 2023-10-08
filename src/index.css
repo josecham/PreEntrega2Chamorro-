@@ -47,7 +47,7 @@ button {
   background-color: #fffbfb;
   cursor: pointer;
   transition: border-color 0.25s;
-  margin-left: 50px
+  margin-left: 20px
 }
 button:hover {
   border-color: #646cff;
@@ -233,6 +233,7 @@ button:focus-visible {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: inherit;
   }
   ul {
     display: block;
@@ -250,17 +251,29 @@ button:focus-visible {
   .description {
     display: block;
     padding: 0;
-    text-align: center;
-    font-size: 17px;
-    font-weight: normal;
-    font-family: "Courier New", Courier, monospace;
     color: #2bfc47;
+    margin-right: 780px;
   }
-  li {
+  .precio{
+    margin-right: 780px;
+  }
+  .numero{
+    margin-left: 10px;
+  }
+  .suma{
+    margin-left: 10px;
+  }
+  .links{
+    margin-right: 780px;
+  }
+  .total{
+    margin-right: 10px;
+  }
+  .li {
     padding: 11px;
   }
   .carrito{
-    margin: -9px;
+    margin: -17px;
     padding-top: 90px;
   }
   .totalcontador {
@@ -295,4 +308,5 @@ button:focus-visible {
   .padi {
     padding: 1px;
   }
+
 }
